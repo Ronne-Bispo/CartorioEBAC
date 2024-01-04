@@ -136,7 +136,8 @@
       printf ("Escolha a opção desejada:\n\n");
       printf ("\t1 - Registrar \n" );
       printf ("\t2 - Consultar \n" );
-      printf ("\t3 - Deletar \n\n" );
+      printf ("\t3 - Deletar \n" );
+      printf ("\t4 - Sair do Sistema \n\n");
       printf ("opção: "); // Fim do menu
 
       scanf ("%d", &opcao); // linha para armazenar a opçao escolhida pelo usuário
@@ -155,6 +156,11 @@
    	    
    	    case 3:
       	deletar();
+   	    break;
+   	    
+   	    case 4:
+   	    printf ("Obrigado por utilizar o Cartório EBAC");
+   	    return 0;
    	    break;
    	    
    	    default:
